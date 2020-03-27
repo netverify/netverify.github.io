@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Netverify"
 author: ratul
-categories: [ Jekyll, tutorial ]
+categories: [ network, verification, synthesis, welcome ]
 image: assets/images/12.jpg
 tags: [sticky]
 ---
