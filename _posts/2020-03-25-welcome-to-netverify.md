@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Netverify"
+title:  "Welcome to netverify.fun"
 author: ratul
 categories: [ network, verification, synthesis, welcome ]
 image: assets/images/12.jpg
