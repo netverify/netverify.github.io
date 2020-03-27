@@ -9,7 +9,6 @@ permalink: "/author-ratul-mahajan.html"
         <div class="row align-items-center mb-5">
             <div class="col-md-9">
                 <h2 class="font-weight-bold">{{page.title}} <span class="small btn btn-outline-success btn-sm btn-round"><a href="{{ site.authors.ratul.site }}">View</a></span></h2>
-                <!-- <p><a href="{{ site.authors.ratul.site }}">{{ site.authors.ratul.site }}</a></p> -->
                 <p class="excerpt">{{ site.authors.ratul.bio }}</p>
             </div>
             <div class="col-md-3 text-right">
@@ -17,10 +16,11 @@ permalink: "/author-ratul-mahajan.html"
             </div>
         </div>
         <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
-            {% assign posts = site.posts | where:"author","ratul" %}
-            {% for post in posts %}
-            {% include main-loop-card.html %}
-            {% endfor %}
+        {% for post in site.posts %}
+        {% if post.authors contains "ratul" %}
+        {% include main-loop-card.html %}
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 </div>

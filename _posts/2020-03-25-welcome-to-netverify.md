@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Welcome to netverify.fun"
-author: ratul
+authors: [ratul, beckett]
 categories: [ network, verification, synthesis, welcome ]
-image: assets/images/12.jpg
+image: assets/images/welcome-image.jpg
 tags: [sticky]
 ---
 
