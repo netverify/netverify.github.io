@@ -14,9 +14,8 @@ description: "A site dedicated to expert commentary on network verification."
     
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
+<!-- <div class="row remove-site-content-margin">
     
-    <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
@@ -47,8 +46,6 @@ description: "A site dedicated to expert commentary on network verification."
     </div>
     
     <div class="col-md-6">
-        
-        <!-- second latest post -->
         {%- assign second_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
@@ -75,7 +72,6 @@ description: "A site dedicated to expert commentary on network verification."
                 </div>
             </div>
         
-        <!-- third latest post -->
         {%- assign third_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
@@ -102,7 +98,6 @@ description: "A site dedicated to expert commentary on network verification."
                 </div>
             </div>
         
-        <!-- fourth latest post -->
         {%- assign fourth_post = site.posts[3] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
@@ -132,6 +127,7 @@ description: "A site dedicated to expert commentary on network verification."
     </div>
     
 </div>
+-->
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
@@ -155,9 +151,6 @@ description: "A site dedicated to expert commentary on network verification."
 {% endfor %}
 
 
-    
-
-
 {% endif %} <!--endif page url is / -->
     
 
@@ -168,7 +161,7 @@ description: "A site dedicated to expert commentary on network verification."
    
     <div class="col-md-12 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>All Articles</span></h4>
         
 
         {% for post in paginator.posts %}

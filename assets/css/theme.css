@@ -644,7 +644,7 @@ footer {
 .sticky-top-offset {
 	top:70px;
 }
-.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
+.homefirstpage .main-loop .main-loop-card:nth-child(-n+1) {
 	display:none !important;
 }
 .excerpt {
