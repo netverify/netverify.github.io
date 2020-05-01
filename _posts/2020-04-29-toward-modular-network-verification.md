@@ -3,7 +3,7 @@ layout: post
 title:  "Toward modular network verification"
 authors: [todd]
 categories: [research, network, verification]
-image: assets/images/jigsaw.jpg
+image: assets/images/jigsaw.png
 tags: []
 ---
 
