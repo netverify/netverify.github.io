@@ -13,21 +13,21 @@ Almost all of the techniques for network verification to date must analyze the e
 
 In a modular approach to verification, each component of a system is given a *specification*, and each component is separately verified to meet its specification.  Importantly, verifying each component only requires access to the specifications, not the implementations, of the components with which it interacts.  
 
-As an example, consider a simple software system containing a main function F that calls another function G.  To prove that F meets some intended specification S, a non-modular approach would analyze the behaviors of F and G jointly.  A modular approach, which is common in traditional software verification based on pre- and postconditions, is to instead define a specification T for G and thereby break the verification of F into two independent parts:
+As an example, consider a simple software system containing a main function $f$ that calls another function $g$.  To prove that $f$ meets some intended specification $\varphi$, a non-modular approach would analyze the behaviors of $f$ and $g$ jointly.  A modular approach, which is common in traditional software verification based on pre- and postconditions, is to instead define a specification $\varphi'$ for $g$ and thereby break the verification of $f$ into two independent parts:
 
-* Prove that G meets the specification T.
+* Prove that $ g $ meets the specification $\varphi'$.
 
-* Prove that F meets the specification S, under the assumption that G meets the specification T.
+* Prove that $f$ meets the specification $\varphi$, under the assumption that $g$ meets the specification $\varphi'$.
 
 ## Why modular verification?
 
 Modularity will provide a number of important benefits for network verification that are absent today.
 
-*Scalability.* Verification must explore all possible system behaviors.  Since the number of system behaviors can grow exponentially in the system size, monolithic verification is inherently unscalable.  And indeed, today the most complex forms of network verification, for example ensuring that a network’s control plane satisfies desired reachability properties in the face of any set of k link failures, do not scale to large networks.  Modular verification can provide asymptotic gains in performance.  Roughly, if there are n components each with m possible behaviors, then the system as a whole can have up to m^n behaviors, while a modular approach will only explore m * n behaviors.
+*Scalability.* Verification must explore all possible system behaviors.  Since the number of system behaviors can grow exponentially in the system size, monolithic verification is inherently unscalable.  And indeed, today the most complex forms of network verification, for example ensuring that a network’s control plane satisfies desired reachability properties in the face of any set of $k$ link failures, do not scale to large networks.  Modular verification can provide asymptotic gains in performance.  Roughly, if there are $n$ components each with $m$ possible behaviors, then the system as a whole can have up to $m^n$ behaviors, while a modular approach will only explore $m * n$ behaviors.
 
 *Independent development.*  Since each component's correctness only depends on the specifications, but not the implementations, of the other components, modular verification allows each component to be developed and validated independently.  In the context of network verification, this means that different teams can be responsible for managing and validating different parts of a network, without requiring access to the configurations of other parts.
 
-*Incremental re-verification.*  Similarly, as the system is updated, it can be incrementally re-verified.  For example, if a component C changes but its specification is unchanged, then only C must be re-verified.  Network configurations are changed daily, to enable new services, perform security updates, etc.  Fast incremental re-verification is critical to making network verification practical.
+*Incremental re-verification.*  Similarly, as the system is updated, it can be incrementally re-verified.  For example, if a component $\mathcal{C}$ changes but its specification is unchanged, then only $\mathcal{C}$ must be re-verified.  Network configurations are changed daily, to enable new services, perform security updates, etc.  Fast incremental re-verification is critical to making network verification practical.
 
 *Design verification.*  Finally, an under-appreciated benefit of modular verification is that it verifies not only the end-to-end properties of a system but also the system's internal design.  A good system has a modular structure, with different components responsible for different tasks, and networks are no exception (see the next section).  Modular verification directly validates this structure by verifying that each component properly performs its tasks, and verification failures are localized to the relevant component and task within the system.
 
