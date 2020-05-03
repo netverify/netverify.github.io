@@ -39,13 +39,16 @@ Networks have a lot of structure that can be exploited for modular verification,
 
 *Protocol modularity.* Networks often run multiple protocols, each of which has a different purpose, for example OSPF for intradomain routing and BGP for interdomain routing.
 
-*Role modularity.* Nodes in a network play different roles.  For example, a data center’s nodes are partitioned into leaf nodes, spine nodes, etc., and an enterprise network’s nodes are partitioned into border routers, core routers, etc.  To my knowledge, this is the only form of modularity that has been exploited in network verification to date.  Specifically, [recent work](https://dlnext.acm.org/doi/pdf/10.1145/3341302.3342094?download=true) modularly verifies data-plane properties in data centers via role-specific checks on each node.
+*Role modularity.* Nodes in a network play different roles.  For example, a data center’s nodes are partitioned into leaf nodes, spine nodes, etc., and an enterprise network’s nodes are partitioned into border routers, core routers, etc.
 
-Function modularity:  A router typically has multiple interfaces, each with its own policy.  Even for a single interface, the router configuration has separate components for different tasks, such as routing and access control.
+*Function modularity.*  A router typically has multiple interfaces, each with its own policy.  Even for a single interface, the router configuration has separate components for different tasks, such as routing and access control.
+
+I am only aware of two existing verification techniques that exploit this modular structure, and both target data-plane verification in data centers.  First, [Plotkin et al.](https://dl.acm.org/doi/pdf/10.1145/2837614.2837657?download=true) perform modular reachability checks on certain subnetworks in order to speed up verification, a technique that they call "surgery."  Second, [Jayaraman et al.](https://dlnext.acm.org/doi/pdf/10.1145/3341302.3342094?download=true) perform verification via separate, role-specific checks on each node in the network.
+
 
 ## Technical challenges
 
-I believe that the field is ready to begin exploring all of these forms of modularity.  Some common technical challenges will arise, leading to important new insights and capabilities:
+I believe that the field is ready to begin exploring all of the forms of modularity described above.  Some common technical challenges will arise, leading to important new insights and capabilities:
 
 *What are the right specifications?* A good specification must be abstract, so that it hides much of the complexity of a component from the rest of the system, while also being precise enough to allow desired system properties to be validated.  Research is necessary to identify appropriate component specifications for each of the above forms of modularity.  I believe that this research direction will also lead to a new understanding of best practices for network design and configuration, for example to minimize dependencies across sub-networks in routing configuration.
 
