@@ -37,6 +37,12 @@ authors:
       site:           http://web.cs.ucla.edu/~todd/
       avatar:         /assets/images/todd-millstein.jpg
       bio:            "Todd Millstein is a Professor of Computer Science at UCLA, as well as a Co-founder and Chief Scientist at Intentionet.  He has also been an Academic Visitor at Oxford University, a Visiting Researcher at Microsoft Research, and a Visiting Fellow at Princeton University.  Todd received a Ph.D. from the University of Washington and an A.B. from Brown University, both in Computer Science."
+
+    lvanbever:
+      name:           Laurent Vanbever
+      site:           https://nsg.ee.ethz.ch/people/laurent-vanbever/
+      avatar:         /assets/images/laurent-vanbever.png
+      bio:            "Laurent Vanbever is an Associate Professor at ETH Zurich. Prior to that, Laurent was a Postdoctoral Research Associate at Princeton University where he worked with Jennifer Rexford. He obtained his PhD degree in Computer Science from the University of Louvain in 2012. Prior to his PhD, Laurent earned a Master degree in Computer Science from the University of Louvain and a Master degree in Business Management from the Solvay Brussels School of Economics and Management, in 2008 and 2010, respectively."
  
 # Defaults
 defaults:
