@@ -122,7 +122,7 @@ But the bigger problem that remains even for dataplane verification is the _lack
 I will write about that in a post called "Look Ma, no specs" about some work to address this problem at UCLA.
 
 There are other ways to reduce time to navigate large state spaces. 
-We can use _[modularity](toward-modular-network-verification/)_ as [Todd Millstein](http://web.cs.ucla.edu/~todd/) points out where the state space is factored into smaller pieces, each with a smaller state space. Second, we can use _abstraction_: we transform the original network state space into a more abstract state space at the price of losing the ability to verify some properties. For example, Minesweeper abstracts away message passing of routing messages using solutions to the Stable Paths Problem.
+We can use _[modularity](../toward-modular-network-verification/)_ as [Todd Millstein](http://web.cs.ucla.edu/~todd/) points out where the state space is factored into smaller pieces, each with a smaller state space. Second, we can use _abstraction_: we transform the original network state space into a more abstract state space at the price of losing the ability to verify some properties. For example, Minesweeper abstracts away message passing of routing messages using solutions to the Stable Paths Problem.
 While modularity and abstraction are essential in other domains, perhaps precomputed equivalence classes are so successful in networks because networking is a shallower (not to mention finite) domain compared to programs or hardware.
 
 I once described networking verification to [Ed Clarke](https://www.cs.cmu.edu/~emc/). His main question was: _what is the state?_ (the (header, packet) pair described above). 
