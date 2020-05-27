@@ -108,7 +108,7 @@ Most networking people believe this is so because the number of disjoint geometr
 
 There are other twists on equivalence classes. 
 For example, at MSR, we observed that complex data centers had lots of backup links and routers that were essentially similar. 
-While this is classically interpreted as _symmetries_ in the state space, one can view the MSR work as defining equivalence classes on the _topology_; by contrast, Atomic predicates define equivalence classes on the headers. 
+While this is classically interpreted as _symmetries_ in the state space, one can view the [MSR work](https://doi.org/10.1145/2837614.2837657) as defining equivalence classes on the _topology_; by contrast, Atomic predicates define equivalence classes on the headers. 
 
 Again this makes sense because the state for network reachability is a pair __(packet, interface)__ where the __packet__ is the current version of the header (which could be rewritten) and the __interface__ is the interface in the network that the header packet is currently at while traveling from $S$ to $D$.
 While classical work in model checking looks for symmetries/equivalence class on the state space, in networks it makes sense to separately factor the equivalence of states into the equivalence of headers (Yang-Lam) and equivalence of interfaces. 
