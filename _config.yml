@@ -50,6 +50,12 @@ authors:
       avatar:         /assets/images/george-varghese.jpg
       bio:            "George Varghese is a Chancellor's Professor of Computer Science at UCLA. He received his Ph.D. in 1992 from MIT after working at DEC designing DECNET protocols and products, including the bridge architecture and Gigaswitch. From 1993-1999, he was a professor at Washington University, and at UCSD from 1999 to 2013. He was the Distinguished Visitor in the computer science department at Stanford University from 2010-2011. From 2012-2016, he was a Principal Researcher and Partner at Microsoft Research working on network verification."
 
+    david:
+      name:           David Walker
+      site:           https://www.cs.princeton.edu/~dpw/
+      avatar:         /assets/images/david-walker.png
+      bio:            "David Walker is a Professor of Computer Science at Princeton University. He received his doctoral and master’s degrees in computer science from Cornell, and his bachelor’s from Queen’s University in Kingston, Ontario.  During sabbaticals from Princeton, he has served as a visiting researcher at Microsoft Research in Redmond (2008) and in Cambridge (2009), and as Associate Visiting Faculty at the University of Pennsylvania (2015-2016)."
+
 
 # Defaults
 defaults:
