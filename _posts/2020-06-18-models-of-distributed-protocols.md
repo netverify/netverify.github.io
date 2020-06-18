@@ -27,7 +27,7 @@ To illustrate the basic pieces of a model, let's take a look at a concrete examp
 
 Below is an example of a network running SIMPLE in an initial state, before the process of computing routes to the destination has begun.  This network has 5 routers, named R$_0$ - R$_4$.  Each router is annotated with an initial route.  R$_0$ is the destination router---it's initial route has a preference of 100, a length of 0 to the destination (it is the destination), and a dummy next-hop of 0.  The other routers have _None_ as their initial route.  
 
-<img src="assets/images/models/network.png" alt="Network Topology" width="523" height="215"/>
+<img src="/assets/images/models/network.png" alt="Network Topology" width="523" height="215"/>
 
 In general, the current _**state**_ X of one of our network models is a function from routers to their current route.  The initial state _**init**_, is an example of such a state.  In this case, we define the _**init**_ state for this network as follows. 
 
@@ -46,7 +46,7 @@ Choices such as which router forwards routes to which other routers, and how to 
 
 In the following picture, we add a little bit of configuration information to our network.  In particular, we will assume that when R$_3$ imports a message from R$_1$ it changes the preference value to 0, making it less desirable than routes imported from R$_2$. We can also configure the network so that certain links drop messages.  For simplicity, we will assume links propagate messages from right to left, and drop all messages (i.e., producing _None_) from left to right.
 
-<img src="assets/images/models/initial.png" alt="Initial State" width="523" height="215"/>
+<img src="/assets/images/models/initial.png" alt="Initial State" width="523" height="215"/>
 
 ## Protocol Simulation
 
@@ -79,30 +79,30 @@ $$(100, 1, 0)$$
 
 as the SIMPLE protocol always prefers some route over _None_.  The following picture diagrams the process.  The green route is the route that emerges for R$_1$ after a single step of simulation:
 
-<img src="assets/images/models/step1.png" alt="Transfer" width="503" height="287"/>
+<img src="/assets/images/models/step1.png" alt="Transfer" width="503" height="287"/>
 
 Cleaning up the picture, our network now looks like this:
 
-<img src="assets/images/models/merge1.png" alt="First Merge" width="503" height="215"/>
+<img src="/assets/images/models/merge1.png" alt="First Merge" width="503" height="215"/>
 
 
 Next, it may be R$_3$'s turn to act.  As mentioned above, when R$_3$ imports its message from R$_1$, it downgrades the preference to 0.  However, since R$_3$ only receives None (no route yet) from R$_2$, it prefers the low-preference route from R$_1$ over no route at all. After R$_3$, R$_4$ may take a turn, leaving the network in the following state after those two steps:
 
 
-<img src="assets/images/models/merge2.png" alt="Second Merge" width="503" height="215"/>
+<img src="/assets/images/models/merge2.png" alt="Second Merge" width="503" height="215"/>
 
 And then the simulation might choose to update R$_2$:
 
 
-<img src="assets/images/models/merge3.png" alt="Third Merge" width="503" height="215"/>
+<img src="/assets/images/models/merge3.png" alt="Third Merge" width="503" height="215"/>
 
 And now you will notice that all routers have a valid route (none of the routers have None as their route).  Still, the simulation is not complete.  If router R$_3$ goes again at this point, it will compute the new route (100, 2, 2), which differs from its current route of (0, 2, 1).  It does so because SIMPLE prefers routes with higher preference value.  As a result, R$_3$ prefers the route it receives from R$_2$ (with preference 100) rather than the route it received earlier from R$_1$ (with preference 0).  R$_3$'s next hop is now 2 instead of 1.
 
-<img src="assets/images/models/merge4.png" alt="Fourth Merge" width="503" height="215"/>
+<img src="/assets/images/models/merge4.png" alt="Fourth Merge" width="503" height="215"/>
  
 And then finally, we need to consider R$_4$ again.  When R$_4$ pulls routes from all its neighbors now, we arrive in the following state.
 
-<img src="assets/images/models/final.png" alt="Final State" width="503" height="215"/>
+<img src="/assets/images/models/final.png" alt="Final State" width="503" height="215"/>
 
 ## Model Solutions
 
