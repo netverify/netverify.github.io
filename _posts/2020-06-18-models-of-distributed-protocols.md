@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Models for Distributed Routing Protocols"
-authors: [david]
+authors: [beckett,giannarakis,gupta,loehr,ratul,thijm,david]
 categories: [overview, research, network, verification]
 image: assets/images/models/step1.png
 tags: []
@@ -9,7 +9,6 @@ tags: []
 
 # Part 1:  SIMPLE Models and Simulation
 
-Ryan Beckett, Nick Giannarakis, Aarti Gupta, Devon Loehr, Ratul Mahajan, Tim Thijm, David Walker
 
 One of the keys to success of any verification effort is identifying a class of _**models**_ capable of representing the important elements of the system under consideration.  Such models inevitably elide information---the real world is too complicated to represent it in its entirety.  However, a good model represents enough of the real world to be useful.  When it comes to software reliability, such models need to represent the causes of important bugs or vulnerabilities.   
 
@@ -25,7 +24,7 @@ While there are many distributed control plane protocols, they share a common st
 
 To illustrate the basic pieces of a model, let's take a look at a concrete example---a made-up protocol we will call _SIMPLE_.  In SIMPLE, each router in the network either knows a route to the destination or it doesn't.  We use the symbol _None_ to represent "no route."  Each known route is a triple _(pref, length, next)_.  The first component, _pref_, is a numeric preference for the route.  The higher the number, the more desirable the route.  In general, the reader can assume the protocol uses 32-bit numbers that range from $0$ to $2^{32}-1$, but the details do not matter.  The second component is the length of the path to the destination.  The third component identifies the router that serves as the next hop along the journey to the destination.  For simplicity, SIMPLE is designed to route to a single destination, so we don't need to include the name of the destination (_i.e._, its IP address) in the routing messages.  We'll discuss more elaborate models for multi-destination routing later in this series of articles.  To summarize, we have now defined the first component of a control plane model, the set of messages _**M**_, that are used to disseminate routing information amongst routers.
 
-Below is an example of a network running SIMPLE in an initial state, before the process of computing routes to the destination has begun.  This network has 5 routers, named R$_0$ - R$_4$.  Each router is annotated with an initial route.  R$_0$ is the destination router---it's initial route has a preference of 100, a length of 0 to the destination (it is the destination), and a dummy next-hop of 0.  The other routers have _None_ as their initial route.  
+Below is an example of a network running SIMPLE in an initial state, before the process of computing routes to the destination has begun.  This network has 5 routers, named R$_0$ - R$_4$.  Each router is annotated with an initial route.  R$_0$ is the destination router---its initial route has a preference of 100, a length of 0 to the destination (it is the destination), and a dummy next-hop of 0.  The other routers have _None_ as their initial route.  
 
 <img src="/assets/images/models/network.png" alt="Network Topology" width="523" height="215"/>
 
