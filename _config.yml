@@ -56,6 +56,30 @@ authors:
       avatar:         /assets/images/david-walker.png
       bio:            "David Walker is a Professor of Computer Science at Princeton University. He received his doctoral and master’s degrees in computer science from Cornell, and his bachelor’s from Queen’s University in Kingston, Ontario.  During sabbaticals from Princeton, he has served as a visiting researcher at Microsoft Research in Redmond (2008) and in Cambridge (2009), and as Associate Visiting Faculty at the University of Pennsylvania (2015-2016)."
 
+    gupta:
+      name:           Aarti Gupta
+      site:           https://www.cs.princeton.edu/~aartig/
+      avatar:         /assets/images/aarti-gupta.jpg
+      bio:            "Aarti Gupta is a Professor of Computer Science at Princeton University. Before joining the department, she worked at NEC Labs America where she led a team in investigating new techniques for formal verification of software and hardware systems, contributing both to their foundations and to successful industrial deployment. Professor Gupta received her Ph.D. in computer science from Carnegie Mellon University in 1994 after earning a master’s degree in computer engineering from Rensselaer Polytechnic Institute and a bachelor’s in electrical engineering from the Indian Institute of Technology in New Delhi."
+
+    giannarakis:
+      name:           Nick Giannarakis
+      site:           https://www.nickgian.github.io
+      avatar:         /assets/images/nick-giannarakis.jpeg
+      bio:            "Nick is a PhD candidate at Princeton University, where he is currently advised by Prof. David Walker. He received a master's degree in Computer Science from ENS Cachan, and a diploma of Electrical and Computer Engineering from National Technical University of Athens."
+      twitter:        naig_kcin
+
+    loehr:
+      name:           Devon Loehr
+      site:           https://dkloehr.github.io
+      avatar:         /assets/images/devon-loehr.jpg
+      bio:            "Devon is a PhD candidate at Princeton University, where he is currently advised by Prof. David Walker. Devon graduated from Swarthmore College in 2018 with High Honors, with majors in Mathematics and Computer Science."
+      
+    thijm:
+      name:           Tim Alberdingk Thijm
+      site:           https://www.cs.princeton.edu/~tthijm/
+      avatar:         /assets/images/tim-thijm.jpg
+      bio:            "Tim is a PhD candidate at Princeton University, where he is currently advised by Prof. Aarti Gupta. Tim completed his BSc at the University of Toronto in 2018 in Computer Science and English."
 
 # Defaults
 defaults:
