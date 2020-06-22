@@ -108,7 +108,7 @@ Most networking people believe this is so because the number of disjoint geometr
 
 There are other twists on equivalence classes. 
 For example, at MSR, we observed that complex data centers had lots of backup links and routers that were essentially similar. 
-While this is classically interpreted as _symmetries_ in the state space, one can view the MSR work as defining equivalence classes on the _topology_; by contrast, Atomic predicates define equivalence classes on the headers. 
+While this is classically interpreted as _symmetries_ in the state space, one can view the [MSR work](https://doi.org/10.1145/2837614.2837657) as defining equivalence classes on the _topology_; by contrast, Atomic predicates define equivalence classes on the headers. 
 
 Again this makes sense because the state for network reachability is a pair __(packet, interface)__ where the __packet__ is the current version of the header (which could be rewritten) and the __interface__ is the interface in the network that the header packet is currently at while traveling from $S$ to $D$.
 While classical work in model checking looks for symmetries/equivalence class on the state space, in networks it makes sense to separately factor the equivalence of states into the equivalence of headers (Yang-Lam) and equivalence of interfaces. 
@@ -122,7 +122,7 @@ But the bigger problem that remains even for dataplane verification is the _lack
 I will write about that in a post called "Look Ma, no specs" about some work to address this problem at UCLA.
 
 There are other ways to reduce time to navigate large state spaces. 
-We can use _[modularity](http://localhost:4000/toward-modular-network-verification/)_ as [Todd Millstein](http://web.cs.ucla.edu/~todd/) points out where the state space is factored into smaller pieces, each with a smaller state space. Second, we can use _abstraction_: we transform the original network state space into a more abstract state space at the price of losing the ability to verify some properties. For example, Minesweeper abstracts away message passing of routing messages using solutions to the Stable Paths Problem.
+We can use _[modularity](../toward-modular-network-verification/)_ as [Todd Millstein](http://web.cs.ucla.edu/~todd/) points out where the state space is factored into smaller pieces, each with a smaller state space. Second, we can use _abstraction_: we transform the original network state space into a more abstract state space at the price of losing the ability to verify some properties. For example, Minesweeper abstracts away message passing of routing messages using solutions to the Stable Paths Problem.
 While modularity and abstraction are essential in other domains, perhaps precomputed equivalence classes are so successful in networks because networking is a shallower (not to mention finite) domain compared to programs or hardware.
 
 I once described networking verification to [Ed Clarke](https://www.cs.cmu.edu/~emc/). His main question was: _what is the state?_ (the (header, packet) pair described above). 
