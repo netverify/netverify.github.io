@@ -81,6 +81,20 @@ authors:
       avatar:         /assets/images/tim-thijm.jpg
       bio:            "Tim is a PhD candidate at Princeton University, where he is currently advised by Prof. Aarti Gupta. Tim completed his BSc at the University of Toronto in 2018 in Computer Science and English."
 
+    schmid:
+      name:           Stefan Schmid
+      site:           https://www.univie.ac.at/ct/stefan/
+      avatar:         /assets/images/schmid.jpg
+      bio:            "Stefan Schmid is a Full Professor at the University of Vienna, Austria. MSc and PhD at ETH Zurich, Postdoc at TU Munich and University of Paderborn, Senior Research Scientist at T-Labs in Berlin, and Associate Professor at Aalborg University, Denmark. Stefan Schmid is interested in the fundamental and algorithmic problems underlying networked systems. He received the IEEE Communications Society ITC Early Career Award 2016 and an ERC Consolidator Grant 2019.
+"
+
+    srba:
+      name:           Jiri Srba
+      site:           http://people.cs.aau.dk/~srba/
+      avatar:         /assets/images/srba.jpg
+      bio:            "Jiri Srba is a Full Professor in computer science at Aalborg University, Denmark. He holds MSc from Faculty of Informatics, Masaryk University in Brno and PhD degree from Aarhus University. Since 2005, he has been employed at Aalborg University. Jiri Srba is interested in applying formal methods such as model checking into industrial cases from computer networking, supervisory control and wireless adhoc networks.
+"
+
 # Defaults
 defaults:
 
