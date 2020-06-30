@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Talk to a network operator today!"
-authors: [aditya, aaron]
+authors: [akella, gemberjacobson]
 categories: [overview, research, network, verification, operators]
 image: assets/images/management-practices-survey.png
 tags: []
