@@ -81,6 +81,18 @@ authors:
       avatar:         /assets/images/tim-thijm.jpg
       bio:            "Tim is a PhD candidate at Princeton University, where he is currently advised by Prof. Aarti Gupta. Tim completed his BSc at the University of Toronto in 2018 in Computer Science and English."
 
+    akella:
+        name:       Aditya Akella
+        site:       http://pages.cs.wisc.edu/~akella/
+        avatar:     /assets/images/aditya-akella.jpg
+        bio:        "Aditya Akella is a Professor of Computer Sciences at the University of Wisconsin-Madison, where he leads the Wisconsin Internet and Systems Research (WISR) Lab, and a Visiting Scientist at Google. Aditya has also been a Visiting Researcher at Microsoft (2014), a Visiting Associate Professor at the University of Washington (2013), and a Postdoc at Stanford University (2005-2006). Aditya has received numerous awards, including an H.I. Romnes Faculty Fellowship (2018), SACM Student Choice Professor of the Year (COW) Award (2017, 2019), the Internet Engineering Task Force (IETF) Applied Networking Research Prize (2015), and the ACM SIGCOMM Rising Star Award (2014). Aditya received a Ph.D. in Computer Science from Carnegie Mellon University (2005) and a B.Tech. in Computer Science from Indian Insitute of Technology, Madras (2000)." 
+
+    gemberjacobson:
+        name:       Aaron Gember-Jacobson
+        site:       https://aaron.gember-jacobson.com
+        avatar:     /assets/images/aaron-gember-jacobson.jpg
+        bio:        "Aaron Gember-Jacobson is an Assistant Professor of Computer Science at Colgate University. Aaron's research focuses on network configuration verification and synthesis. Aaron enjoys teaching Introduction to Computing, Operating Systems, Computer Networks, and a First Year Seminar entitled 'The Unreliable Internet.' Aaron received a Ph.D. and Master of Science in Computer Science from the University of Wisconsin-Madison and a Bachelor of Science in Computer Science from Marquette University. During his Ph.D., Aaron was awarded the Internet Engineering Task force (IETF) Applied Networking Research Prize (2015) and an IBM Ph.D. Fellowship."
+
 # Defaults
 defaults:
 
