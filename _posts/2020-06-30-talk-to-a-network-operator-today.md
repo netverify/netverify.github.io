@@ -12,7 +12,13 @@ Recently, we have seen significant advances in tools that bring formal methods t
 While we have made big intellectual strides in developing these tools, it still feels like the beginning of a long journey. In our view, the research community as a whole has a ways to go before the tools are useful and widely applicable. And a major reason is the lack of close interaction with the network operator community.
 
 This article is a call to arms to those researching in this space to have a
-"network operator-buddy", actually, several operator-buddies. Talk to these buddies about their needs and pain-points; talk to them about obtaining access to operational data, and let the data guide your research as much as possible; talk to them about your ideas, and get them to use your tools! Our experience has been that this opens up  not only interesting new research problems but also a direct path to real-world impact. 
+"network operator-buddy", actually, several operator-buddies. Talk to these
+buddies about their needs and pain-points; talk to them about obtaining access
+to operational data, and let the data guide your research as much as possible;
+talk to them about your ideas, and get them to use your tools! Our experience
+has been that this opens up not only interesting new research problems but
+also a direct path to real-world impact. Such conversations can be especially
+valuable for newcomers to this space.
 
 Below we outline some highlights from our own exploration of this research topic, and how it was, and continues to be, largely informed by feedback and help from network operators and by insights derived from their invaluable data. 
 
@@ -40,14 +46,9 @@ devices.
 
 Crucially, we found critical empirical evidence that networks with a greater degree of change -- either frequent changes, or changes that are big in scope, or both -- were more susceptible to failures (as indicated by higher incidence of trouble tickets). This in particular hinted at a potentially important use case that the state-of-the-art dataplane verification tools may be missing, namely, proactive verification. Dataplane verification tools verify just the current snapshot of the network's forwarding state. Given the frequency of changes, and the relationship between changes and outages, we felt that network operators may also be interested in whether the modifications might result in violations of properties. 
 
-Our informal conversation with operators from [US Big-10](https://bigten.org)
-schools (of which [UW-Madison](https://wisc.edu) is one) confirmed this for
-us: operators indicate that they would much rather analyze configuration
-changes before deployment, rather than identify bugs when they manifest after
-deployment, by which time it is often already too late!  
+Our informal conversation with operators from [US Big-10](https://bigten.org) schools (of which [UW-Madison](https://wisc.edu) is one) confirmed this for us: operators indicate that they would much rather analyze configuration changes before deployment, rather than identify bugs when they manifest after deployment, by which time it is often already too late!  About the same time, a group of researchers presented [Batfish](https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-fogel.pdf) -- the first control plane verifier to ``derive the actual data plane that would emerge given a configuration and environment.'' Using Batfish, the researchers uncovered a variety of bugs in two real university networks.
 
-Analyzing operational data and talking to operators thus opened the door to
-our work on
+Our own and others' analysis of operational data and discussions with operators thus opened the door to our work on
 [ARC](https://aaron.gember-jacobson.com/docs/gember-jacobson2016arc.pdf) and
 subsequently, [Tiramisu](https://www.usenix.org/system/files/nsdi20-paper-abhashkumar.pdf), tools for proactive verification of network control planes.
 
@@ -80,7 +81,9 @@ encode the various metrics routing protocols use in their decision-making.
 
 ## Identifying new directions
 
-Operators continue to offer us valuable insights on our verification tools that have steered our work in an interesting new direction. 
+Operators continue to offer us valuable insights on our verification tools
+that have steered our work in an interesting new direction, and helped us
+identify which problems are the most important to work on.
 
 Notably, at a presentation on ARC and Tiramisu at a large online service
 provider, a network operator asked us if the graph-based control plane
@@ -88,10 +91,10 @@ abstractions underlying these tools can be used to validate if a given network
 is susceptible to overload: more precisely, does there exist a combination of
 a group of links failing and a network traffic matrix that causes the
 network's control plane to select paths that may overload certain links? This
-is an example of a "quantitative verification question" that existing tools
-cannot answer because of their exclusive focus on qualitative path properties
-(such as path existence, number of paths, etc). This led to our work on
-[QARC](http://wisr.cs.wisc.edu/papers/pldi20qarc.pdf), a tool for exhaustively checking networks for potential susceptibilities to overload. We hope to talk about QARC at length in a future article.
+is an example of a "quantitative verification question" that existing
+proactive verification tools cannot answer because of their exclusive focus on
+qualitative path properties (such as path existence, number of paths, etc). 
+Interestingly, the same question arose in a discussion we had with operators at UW-Madison. This led to our work on [QARC](http://wisr.cs.wisc.edu/papers/pldi20qarc.pdf), a tool for exhaustively checking networks for potential susceptibilities to overload.  We hope to talk about QARC at length in a future article.
 
 Our work on control plane
 [repair](https://aaron.gember-jacobson.com/docs/gember-jacobson2017cpr.pdf)
