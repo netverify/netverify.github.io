@@ -37,7 +37,11 @@ On the far left are configuration verifiers that take a networks’ current conf
 
 However, some verifiers provide more than a simple yes/no answer for each forwarding requirement. For example, [Minesweeper](https://ratul.org/papers/sigcomm2017-minesweeper.pdf) and [ARC](http://aaron.gember-jacobson.com/docs/gember-jacobson2016arc.pdf) both produce a concrete counterexample---e.g., a failure scenario and resulting forwarding path---for each violated requirement. Going a step further, [Batfish](https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-fogel.pdf) and [Plankton](https://www.usenix.org/system/files/nsdi20-paper-prabhu.pdf) produce complete forwarding information bases (FIBs), and Batfish tracks the provenance of each FIB entry, such that a network engineer can trace the sequence of events and set of configuration statements that led to the FIB entry’s existence. 
 
-Similarly, not all synthesizers produce configurations entirely from scratch. For example, [Zeppelin](http://pages.cs.wisc.edu/~sskausik08/papers/sigmetrics18zeppelin.pdf) allows a network engineer to specify policies regarding configuration structure---e.g., which routers should run BGP? how many OSPF areas should there be?---which inform the structure of the synthesized configurations. Going a step further, [NetComplete](https://vanbever.eu/pdfs/vanbever_netcomplete_nsdi_2018.pdf) requires network engineers to provide a configuration template with holes for key parameters---e.g., link costs, route filter match criteria, etc.---and synthesizes values for these holes, rather than the complete configuration.
+Similarly, not all synthesizers produce configurations entirely from scratch. 
+For example, [Propane/AT](https://ratul.org/papers/pldi2017-propaneat.pdf)
+synthesizes abstract templates based on device roles (e.g., _core_ and
+_border_ routers) and generates/updates concrete configurations as the
+topology grows. Similarly, [Zeppelin](http://pages.cs.wisc.edu/~sskausik08/papers/sigmetrics18zeppelin.pdf) allows a network engineer to specify policies regarding configuration structure---e.g., which routers should run BGP? how many OSPF areas should there be?---which inform the structure of the synthesized configurations. Going a step further, [NetComplete](https://vanbever.eu/pdfs/vanbever_netcomplete_nsdi_2018.pdf) requires network engineers to provide a configuration template with holes for key parameters---e.g., link costs, route filter match criteria, etc.---and synthesizes values for these holes, rather than the complete configuration.
 
 (We’ll discuss the middle of the spectrum, which includes [CPR](https://aaron.gember-jacobson.com/docs/gember-jacobson2017cpr.pdf) and [Jinjing](https://dlnext.acm.org/doi/abs/10.1145/3341302.3342088), later in this article.)
 
@@ -51,7 +55,30 @@ The spectrum of configuration verifiers and synthesizers that exist today raises
 
 One way to approach this is to ask a slightly different question: _are you working with a greenfield or a brownfield network?_ A greenfield (i.e., brand new) network is a perfect opportunity to employ configuration synthesis, because a greenfield network does not have any existing configurations. There may be configuration templates that were used in other (similar) networks, which could motivate choosing a partial configuration synthesizer (e.g., [NetComplete](https://vanbever.eu/pdfs/vanbever_netcomplete_nsdi_2018.pdf)) as opposed to a complete configuration synthesizer (e.g., [Propane](https://ratul.org/papers/sigcomm2016-propane.pdf) and [SyNET](https://vanbever.eu/pdfs/vanbever_synet_cav_2017.pdf)). In contrast, network verifiers are often better suited for a brownfield (i.e., partially existing) network, because configurations already exist, changes are often small, and network engineers already have established network management practices. (These observations are supported by studies of configuration changes in [large university campus networks](https://conferences.sigcomm.org/imc/2011/docs/p499.pdf) and [large data center networks](https://conferences2.sigcomm.org/imc/2015/papers/p395.pdf).)
 
-A different way is to ask: _how much automated change are you willing to tolerate?_ Complete configuration synthesizers (e.g., [Propane](https://ratul.org/papers/sigcomm2016-propane.pdf) and [SyNET](https://vanbever.eu/pdfs/vanbever_synet_cav_2017.pdf)) completely ignore a network’s current configurations and synthesize brand-new configurations. This requires wholesale replacement of a network’s configurations each time forwarding policies change. Moreover, any hand-tuning of configurations may be wiped out. Partial configuration synthesizers (e.g., [NetComplete](https://vanbever.eu/pdfs/vanbever_netcomplete_nsdi_2018.pdf)) allow some aspects of a network’s configurations to remain fixed. However, it’s up to network engineers to determine how much of a configuration to manually specify (in a template) and how much to synthesize. More manual specification means more work for network engineers and a relaxation of the "correct-by-construction" guarantees provided by configuration synthesizers. In contrast, configuration verifiers are "read-only" insofar as they flag configuration errors but do not generate any part of the configurations. This allows network engineers to have complete control over configuration changes, which enables engineers to hand-tune changes according to existing network management practices and preserve their networks’ configuration "style."
+A different way is to ask: _how much automated change are you willing to
+tolerate?_ Clean-slate configuration synthesizers (e.g.,
+[Propane](https://ratul.org/papers/sigcomm2016-propane.pdf) and
+[SyNET](https://vanbever.eu/pdfs/vanbever_synet_cav_2017.pdf)) completely
+ignore a network’s current configurations and synthesize brand-new
+configurations. This requires wholesale replacement of a network’s
+configurations each time forwarding policies change, which is a risky and
+potentially disruptive operation---e.g., network engineers from a regional
+research and education network reported that flash reliability problems 
+cause some routers in their network to crash when the configuration is
+updated. Moreover, any hand-tuning of configurations may be wiped out. Partial
+configuration synthesizers (e.g.,
+[NetComplete](https://vanbever.eu/pdfs/vanbever_netcomplete_nsdi_2018.pdf) and
+[PropaneAT](https://ratul.org/papers/pldi2017-propaneat.pdf))
+allow some aspects of a network’s configurations to remain fixed. However,
+it’s up to network engineers to determine how much of a configuration to
+manually specify (in a template) and how much to synthesize. More manual
+specification means more work for network engineers and a relaxation of the
+"correct-by-construction" guarantees provided by configuration synthesizers.
+In contrast, configuration verifiers are "read-only" insofar as they flag
+configuration errors but do not generate any part of the configurations. This
+allows network engineers to have complete control over configuration changes,
+which enables engineers to hand-tune changes according to existing network
+management practices and preserve their networks’ configuration "style."
 
 ## A middle ground: configuration repair
 
