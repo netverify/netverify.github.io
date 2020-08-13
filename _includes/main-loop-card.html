@@ -13,6 +13,14 @@
 		{% endfor %}
 		</span>
 	</small>
+	<small class="d-block text-muted">
+		By <span class="catlist">
+		{% for a in post.authors %}
+		{% assign author = site.authors[a] %}
+		<a class="text-capitalize text-muted smoothscroll" href="{{ author.site }}">{{ author.name }}</a><span class="sep">, </span>
+		{% endfor %}
+		</span>
+	</small>
 	<small class="text-muted">
 		{{ post.date | date: '%b %d, %Y' }}
 	</small>
