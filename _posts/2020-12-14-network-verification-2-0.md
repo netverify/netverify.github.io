@@ -22,7 +22,7 @@ Verification is difficult to consume for network engineers today because its inp
 
 Similarly, the verification tool output may be large sets of flows that are dropped from A to B. Communicating such sets, which may be a complex combination of multiple header fields, is tricky. For example, the path from A to B may contain a number of access control lists (ACLs) similar to the ones shown below, the ACLs may have 100s of lines, and may filter on more than just the source and destination addresses.
 
-<img src="/assets/images/verification-2.0-acls.png" alt="Example ACLs" width="873" height="132"/>
+![](/assets/images/verification-2.0-acls.png)
 
 Communicating complex spaces via (a few) examples is a possibility but can be misleading. If we pick a source IP that is not in the network, the engineer may conclude that the discovered violation is irrelevant. In reality, the source IP was just an example and in-network IPs (not picked as an example) may also lead to invariant violations. We need to fundamentally rethink how the complex output of verification tools can be effectively communicated to engineers. 
 
