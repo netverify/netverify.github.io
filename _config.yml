@@ -107,6 +107,19 @@ authors:
         avatar:     /assets/images/aaron-gember-jacobson.jpg
         bio:        "Aaron Gember-Jacobson is an Assistant Professor of Computer Science at Colgate University. Aaron's research focuses on network configuration verification and synthesis. Aaron enjoys teaching Introduction to Computing, Operating Systems, Computer Networks, and a First Year Seminar entitled 'The Unreliable Internet.' Aaron received a Ph.D. and Master of Science in Computer Science from the University of Wisconsin-Madison and a Bachelor of Science in Computer Science from Marquette University. During his Ph.D., Aaron was awarded the Internet Engineering Task force (IETF) Applied Networking Research Prize (2015) and an IBM Ph.D. Fellowship."
 
+    jrex:
+        name:       Jennifer Rexford
+        site:       https://www.cs.princeton.edu/~jrex/
+        avatar:     /assets/images/jennifer-rexford.jpg
+        bio:        "Jennifer Rexford is the Gordon Y.S. Wu Professor of Engineering and the Chair of Computer Science at Princeton University. Before joining Princeton in 2005, she worked for eight years at AT&T Labs--Research. Jennifer received her BSE degree in electrical engineering from Princeton University in 1991, and her PhD degree in electrical engineering and computer science from the University of Michigan in 1996. Jennifer received the ACM SIGCOMM award for lifetime contributions and the IEEE Internet Award."
+        twitter:    jrexnet
+
+    pamela:
+        name:       Pamela Zave
+        site:       http://pamelazave.com/
+        avatar:     /assets/images/pamela-zave.jpg
+        bio:        "Pamela Zave is a researcher in the Computer Science Department of Princeton University.  She received a PhD degree in computer sciences from the University of Wisconsin--Madison and an AB degree in English from Cornell University.  She spent 36 years in the research divisions of Bell Labs  and AT&T Labs, doing interdisciplinary work at the intersection of formal methods and network services.  Dr. Zave is an ACM Fellow, an AT&T Fellow, and the 2017 recipient of the IEEE Harlan D. Mills Award for the development of sound software-engineering theory and sustained, impactful applications to practice. In addition to her research publications, she holds 32 patents."
+
 # Defaults
 defaults:
 
