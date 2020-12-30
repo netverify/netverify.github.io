@@ -3,7 +3,7 @@ layout: post
 title: "Modular Verification in Compositional Network Architecture"
 authors: [pamela]
 categories: [research, network, verification]
-image: assets/images/vpn.png
+image: assets/images/cnavPic.png
 tags: []
 ---
 

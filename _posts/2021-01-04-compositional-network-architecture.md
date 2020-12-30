@@ -3,7 +3,7 @@ layout: post
 title: "Compositional Network Architecture"
 authors: [pamela, jrex]
 categories: [research, network, architecture]
-image: assets/images/attpacket.png
+image: assets/images/cnaPic.png
 tags: []
 ---
 
@@ -28,7 +28,7 @@ In any network, a _session_ is an instance of one of the services provided by th
 
 As a consequence, layers in the new model are bigger than layers in the classic Internet architecture--for example, the classic network and transport layers of the Internet together make one CNA layer composed of IP networks bridged together. The advantage is that a bigger module is more complete, so a network's interface to an overlay network is the same as the interface of an underlay network to it. In other words, we have made networks composable like Lego bricks.
 
-![](/assets/images/attpacket.png)
+![](/assets/images/cnaPic.png)
 
 The picture shows the headers of a typical packet in the AT&T backbone network. The packet is traveling through 6 layered networks simultaneously, 3 of which are IP networks. Each IP network is revealed by an IP header for forwarding and one or more session-protocol headers.
 
