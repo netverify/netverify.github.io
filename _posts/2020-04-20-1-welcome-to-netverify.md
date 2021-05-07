@@ -20,6 +20,6 @@ The site of course cannot succeed without community engagement. If you work in t
 
 Contributing to the site is easy. Send pull requests to [its GitHub repository](https://github.com/netverify/netverify.github.io) with new articles or additions/corrections to existing ones; open issues for topics you would like to see covered; and participate in discussions about published articles. You are also welcome to drop us a line if you need a sounding board for your contribution ideas.
 
-We are launching netverify.fun site with [a piece that captures our view on network verification research](https://netverify.fun/current-state-of-research/), and we have a great line up of articles in the pipeline. 
+We are launching netverify.fun site with [a piece that captures our view on network verification research](https://netverify.fun/2-current-state-of-research/), and we have a great line up of articles in the pipeline. 
 
 So, stay tuned! 
