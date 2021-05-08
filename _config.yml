@@ -119,6 +119,12 @@ authors:
         site:       http://pamelazave.com/
         avatar:     /assets/images/pamela-zave.jpg
         bio:        "Pamela Zave is a researcher in the Computer Science Department of Princeton University.  She received a PhD degree in computer sciences from the University of Wisconsin--Madison and an AB degree in English from Cornell University.  She spent 36 years in the research divisions of Bell Labs  and AT&T Labs, doing interdisciplinary work at the intersection of formal methods and network services.  Dr. Zave is an ACM Fellow, an AT&T Fellow, and the 2017 recipient of the IEEE Harlan D. Mills Award for the development of sound software-engineering theory and sustained, impactful applications to practice. In addition to her research publications, she holds 32 patents."
+        
+    harryliu:
+        name:       Hongqiang Harry Liu
+        site:       http://www.hongqiangliu.com/
+        avatar:     /assets/images/harry-liu.png
+        bio:        "Hongqiang Harry Liu is a Director of Research in Alibaba Cloud and Alibaba DAMO Acedamy. He holds a PhD from the Department of Computer Science at Yale University and a bachelor's degree and a master's degree from the Department of Electronic Engineering at Tsinghua University. Before joining Alibaba, he served as a senior researcher at Microsoft Research Redmond and was responsible for the R&D and implementation of key technologies related to stable, high-performance Azure networks. His research interests cover cloud data center networks, backbone networks, mobile network transmission technologies, 5G networks, and device-side computing. He has served as a reviewer of papers in SIGCOMM and NSDI conferences and has published nearly 20 papers accepted by SIGCOMM, NSDI, and SOSP conferences. In 2014, he won the SIGCOMM Doctoral Dissertation Award - Honorable Mention."
 
 # Defaults
 defaults:
