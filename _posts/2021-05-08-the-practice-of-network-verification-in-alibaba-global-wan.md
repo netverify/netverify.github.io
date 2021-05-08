@@ -16,7 +16,7 @@ Alibaba operates a private WAN (wide-area network) that interconnects all its da
 Since 2016, Alibaba starts to deploy network verification technologies inside its global WAN to fundamentally upgrade the way it enforces the reliability and efficiency of its network operations – never relying on human hands but computational logic. In this article, I want to share some of our refined experiences in deploying and using network verification techniques in the wild. 
 
 
-## Motivate: why network verification? 
+## Motivation: why network verification? 
 
 Alibaba’s global WAN is a typical example of an extremely complex network that has to be operated and managed correctly. Since many applications rely on the WAN, an inadvertent mistake might result in severe incidents that impact millions of users and businesses. On the other hand, since the applications and businesses are quickly expanding and growing, the WAN has to frequently perform upgrades such as adding new devices, replacing existing devices with new models, adding new capacity and routes, adding new security policies, and so forth. The rapid evolvements of the WAN bring tremendous challenges to the protection of the network reliability:
 
