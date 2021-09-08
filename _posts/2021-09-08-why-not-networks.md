@@ -121,7 +121,7 @@ exist in production networks, much as we might wish everything could
 be cleanly designed again from the ground up. So tools that assist in
 verifying that networks will behave as expected have to address this
 complexity, with the ability to model the behavior of real-world
-networks. Tools such as [Batfish](https://github.com/batfish/batfish)
+networks. Tools such as [Batfish](https://batfish.org)
 and those of [Forward Networks](https://forwardnetworks.com/) are
 getting increasingly good at this.  And when we do get the opportunity
 to build greenfield networks, they benefit from the stronger
