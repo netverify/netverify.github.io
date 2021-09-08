@@ -126,6 +126,12 @@ authors:
         avatar:     /assets/images/harry-liu.png
         bio:        "Hongqiang Harry Liu is a Director of Research in Alibaba Cloud and Alibaba DAMO Acedamy. He holds a PhD from the Department of Computer Science at Yale University and a bachelor's degree and a master's degree from the Department of Electronic Engineering at Tsinghua University. Before joining Alibaba, he served as a senior researcher at Microsoft Research Redmond and was responsible for the R&D and implementation of key technologies related to stable, high-performance Azure networks. His research interests cover cloud data center networks, backbone networks, mobile network transmission technologies, 5G networks, and device-side computing. He has served as a reviewer of papers in SIGCOMM and NSDI conferences and has published nearly 20 papers accepted by SIGCOMM, NSDI, and SOSP conferences. In 2014, he won the SIGCOMM Doctoral Dissertation Award - Honorable Mention."
 
+    bruce:
+        name:       Bruce Davie
+        site:       https://systemsapproach.substack.com/
+        avatar:     /assets/images/bruce-davie.jpg
+        bio:        "Bruce Davie is a computer scientist noted for his contributions to the field of networking. He recently co-founded Systems Approach, LLC, to develop open source computer science educational materials. He is a former VP and CTO for the Asia Pacific region at VMware. He joined VMware during the acquisition of Software Defined Networking (SDN) startup Nicira. Prior to that, he was a Fellow at Cisco Systems, leading a team of architects responsible for Multiprotocol Label Switching (MPLS). Davie has over 30 years of networking industry experience and has co-authored 17 RFCs. He was recognized as an ACM Fellow in 2009 and chaired ACM SIGCOMM from 2009 to 2013. He was also a visiting lecturer at the Massachusetts Institute of Technology for five years. Davie is the author of multiple books and the holder of more than 40 U.S. Patents."
+        
 # Defaults
 defaults:
 
