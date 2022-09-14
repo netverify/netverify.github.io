@@ -131,7 +131,14 @@ authors:
         site:       https://systemsapproach.substack.com/
         avatar:     /assets/images/bruce-davie.jpg
         bio:        "Bruce Davie is a computer scientist noted for his contributions to the field of networking. He recently co-founded Systems Approach, LLC, to develop open source computer science educational materials. He is a former VP and CTO for the Asia Pacific region at VMware. He joined VMware during the acquisition of Software Defined Networking (SDN) startup Nicira. Prior to that, he was a Fellow at Cisco Systems, leading a team of architects responsible for Multiprotocol Label Switching (MPLS). Davie has over 30 years of networking industry experience and has co-authored 17 RFCs. He was recognized as an ACM Fellow in 2009 and chaired ACM SIGCOMM from 2009 to 2013. He was also a visiting lecturer at the Massachusetts Institute of Technology for five years. Davie is the author of multiple books and the holder of more than 40 U.S. Patents."
-        
+
+    siva:
+      name:          Siva Kesava Reddy Kakarla
+      site:          https://sivak.dev/
+      avatar:        /assets/images/siva-kakarla.JPG
+      bio:           "Siva Kakarla is a senior researcher in the Networking research group at Microsoft. He received a Ph.D. in Computer Science from the University of California Los Angeles, advised by Todd Millstein and George Varghese. During his Ph.D., he received a SIGCOMM best student paper award, UCLA Graduate Dean’s Scholar Award, and was a Facebook Ph.D. fellowship finalist. Siva received his undergraduate degree in Computer Science and Engineering from IIT Kharagpur."
+      twitter:       SivaKesavaRK
+
 # Defaults
 defaults:
 
