@@ -12,12 +12,12 @@ include: ["_pages"]
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+
 authors:
     ratul:
       name:           Ratul Mahajan
@@ -31,7 +31,7 @@ authors:
       site:           http://beckett.ninja
       avatar:         /assets/images/ryan-beckett.jpg
       bio:            "Ryan Beckett is a Computer Scientist in the Mobility and Networking research group at Microsoft. He holds a PhD from Princeton in Computer Science as well as a B.S. in Computer Science and a B.A. in Mathematics from the University of Virginia."
- 
+
     todd:
       name:           Todd Millstein
       site:           http://web.cs.ucla.edu/~todd/
@@ -43,7 +43,7 @@ authors:
       site:           https://nsg.ee.ethz.ch/people/laurent-vanbever/
       avatar:         /assets/images/laurent-vanbever.png
       bio:            "Laurent Vanbever is an Associate Professor at ETH Zurich. Prior to that, Laurent was a Postdoctoral Research Associate at Princeton University where he worked with Jennifer Rexford. He obtained his PhD degree in Computer Science from the University of Louvain in 2012. Prior to his PhD, Laurent earned a Master degree in Computer Science from the University of Louvain and a Master degree in Business Management from the Solvay Brussels School of Economics and Management, in 2008 and 2010, respectively."
-    
+
     george:
       name:           George Varghese
       site:           http://web.cs.ucla.edu/~varghese/
@@ -74,7 +74,7 @@ authors:
       site:           https://dkloehr.github.io
       avatar:         /assets/images/devon-loehr.jpg
       bio:            "Devon is a PhD candidate at Princeton University, where he is currently advised by Prof. David Walker. Devon graduated from Swarthmore College in 2018 with High Honors, with majors in Mathematics and Computer Science."
-      
+
     thijm:
       name:           Tim Alberdingk Thijm
       site:           https://www.cs.princeton.edu/~tthijm/
@@ -119,7 +119,7 @@ authors:
         site:       http://pamelazave.com/
         avatar:     /assets/images/pamela-zave.jpg
         bio:        "Pamela Zave is a researcher in the Computer Science Department of Princeton University.  She received a PhD degree in computer sciences from the University of Wisconsin--Madison and an AB degree in English from Cornell University.  She spent 36 years in the research divisions of Bell Labs  and AT&T Labs, doing interdisciplinary work at the intersection of formal methods and network services.  Dr. Zave is an ACM Fellow, an AT&T Fellow, and the 2017 recipient of the IEEE Harlan D. Mills Award for the development of sound software-engineering theory and sustained, impactful applications to practice. In addition to her research publications, she holds 32 patents."
-        
+
     harryliu:
         name:       Hongqiang Harry Liu
         site:       http://www.hongqiangliu.com/
@@ -139,6 +139,27 @@ authors:
       bio:           "Siva Kakarla is a senior researcher in the Networking research group at Microsoft. He received a Ph.D. in Computer Science from the University of California Los Angeles, advised by Todd Millstein and George Varghese. During his Ph.D., he received a SIGCOMM best student paper award, UCLA Graduate Dean’s Scholar Award, and was a Facebook Ph.D. fellowship finalist. Siva received his undergraduate degree in Computer Science and Engineering from IIT Kharagpur."
       twitter:       SivaKesavaRK
 
+    nate:
+      name:          Nate Foster
+      site:          https://www.cs.cornell.edu/~jnfoster/
+      avatar:        /assets/images/nate-foster.jpg
+      bio:           "Nate Foster is a Professor of Computer Science at Cornell University and a Platform Architect at Intel. The goal of his research is to develop languages and tools that make it easy for programmers to build secure and reliable systems. His current work focuses on the design and implementation of languages for programming software-defined networks. In the past he has also worked on bidirectional languages (also known as “lenses”), database query languages, data provenance, type systems, mechanized proof, and formal semantics. He received a PhD in Computer Science from the University of Pennsylvania, an MPhil in History and Philosophy of Science from Cambridge University, and a BA in Computer Science from Williams College. His awards include a Sloan Research Fellowship, an NSF CAREER Award, the SIGCOMM Rising Star Award, a Most Influential POPL Paper Award, a most Influential ICFP Paper Award, a Tien ‘72 Teaching Award, several Google Research Awards, a Yahoo! Academic Career Enhancement Award, a Cornell Engineering Research Excellence Award, and the Morris and Dorothy Rubinoff Award."
+      twitter:       natefoster
+
+    arvind:
+      name:          Arvind Krishnamurthy
+      site:          https://www.cs.washington.edu/people/faculty/arvind
+      avatar:        /assets/images/arvind-krishnamurthy.jpg
+      bio:           "Arvind Krishnamurthy is the Short-Dooley Professor in the Paul G. Allen School of Computer Science & Engineering. His research interests are in building effective and robust computer systems in the context of both data centers and Internet-scale systems. More recently, his research has focussed on programmable networks and systems for machine learning. He is an ACM fellow, a past program chair of ACM SIGCOMM and Usenix NSDI, is the Vice President of Usenix, and serves on the ICSI and CRA boards."
+      twitter:       arvind_uw
+
+    anduo:
+      name:          Anduo Wang
+      site:          https://anduowang.github.io/
+      avatar:        /assets/images/anduo-wang.jpeg
+      bio:           "Anduo Wang is an Associate Professor at Temple University, where she specializes in improving network state management using formal methods, databases, knowledge representation and reasoning, and logic programming. She received her Ph.D. from UPenn in 2013 and was a postdoctoral researcher at UIUC with Matthew Caesar and Brighten Godfrey before joining Temple University in 2016. Anduo has been the recipient of three NSF grants as a single-PI investigator, including the CRII in 2017, CNS core small in 2019, and CAREER in 2022. She has served in various networking venues, including as the General Chair for the ACM SOSR conference in 2020 and as a member of the ACM SIGCOMM Executive Committee as the SIGCOMM Information Services Director from 2017 to 2021."
+
+
 # Defaults
 defaults:
 
@@ -149,13 +170,13 @@ defaults:
       layout: post
       author: sal
       avatar: /assets/images/avatar1.jpg
-      
+
   # all pages
   - scope:
       path: "_pages"
     values:
       layout: page
-      
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
