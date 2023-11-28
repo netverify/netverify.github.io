@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Making Networks Safe and Agile with Formal Methods and Programming Abstractions"
+title:  "Making Networks Safe and Agile with Formal Methods and Programming Abstractions: Future Directions"
 authors: [nate, arvind, ratul, todd, david, anduo, pamela]
 categories: [formal methods, programming languages]
 image: assets/images/pl-nets.png
