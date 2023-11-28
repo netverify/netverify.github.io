@@ -46,3 +46,7 @@ A language-oriented approach to designing networks has many advantages.  Languag
 The research agenda here goes beyond developing surface language for different tasks. It includes developing one or more intermediate languages (ILs) that provide a common representation for multiple surface languages, in the same way, LLVM provides a platform for compiling and analyzing many general-purpose languages. Such ILs will provide a common basis for verification and optimization, without needing to do this work for each surface language.
 
 Further, to facilitate verification and synthesis, it is usually helpful for languages to be designed with these goals in mind from the get-go. Languages facilitate the verification process through “correct by construction design”, which eliminates failure modes.  Linguistic features such as embedded assertions, constraints, types, proofs, and symbolic values allow programmers to write, and more importantly, maintain proofs as they construct and maintain, synthesize, or re-synthesize programs.  Equally important are the development environments in which programmers operate. Such environments can facilitate code construction and analysis of all kinds, as well as maintain proof state.
+
+---
+
+_This article is a byproduct of discussions amongst the authors in the context of [NSF Community Workshop on Long-term Research Directions in Wired Networking](https://wired23.github.io/)_
