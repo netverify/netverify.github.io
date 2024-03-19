@@ -19,4 +19,6 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then point your browser to http://localhost:4000/
+Then point your browser to http://localhost:4000/. 
+
+The site was tested with ruby version 3.2.2.
