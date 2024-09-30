@@ -17,7 +17,7 @@ Consider a common change: Move all traffic on link *a1* to a parallel link *a2* 
 </p>
 To check that our change is correct, one should verify that *a1* no longer carries any traffic and that all traffic it was carrying moves to *a2*. Doesn't sound too hard!  But that's just the beginning—the easy part really.
   
-We also do not want to change how flows upstream of *a1* and *a2* and we do not want to change how traffic flows downstream of *a1* and *a2*.  The following picture gives us a better perspective on what we need to ensure—traffic on the orange subpaths must remain unchanged.
+We also do not want to change how traffic flows upstream of *a1* and *a2* and we do not want to change how traffic flows downstream of *a1* and *a2*.  The following picture gives us a better perspective on what we need to ensure—traffic on the orange subpaths must remain unchanged.
 
 <p align="center">
 <img src="/assets/images/relational-verification-full-paths.png" alt="Changing network paths from a1 to a2" height="300"/>
@@ -42,7 +42,7 @@ spec change_link = { a1 : replace(a1, a2); }
 ```
 The first occurrence of *a1* is called the "zone" (or area of interest) of a change.  Zones are sets of paths through the network.  They are specified using regular expressions.  The command after the colon is a traffic modifier.  In this case, the modifier states that traffic running through *a1* should instead run through *a2*.
 
-If we would like to say that some part of the network does not change, that is easy too.  Here is a specification that says all paths (regular expression *.\** ) stay the same (the *preserve* modifier).  Sometimes engineers will re-factor a configuration; a specification like this checks that they did not accidentally change the network forwarding.  
+If we would like to say that some part of the network does not change, that is easy too.  Here is a specification that says all paths (regular expression *.\** ) stay the same (the *preserve* modifier).  Sometimes engineers will re-factor a configuration; a specification like this checks that they did not accidentally change network forwarding paths.  
 
 ```
 spec nochange = { .* : preserve }
