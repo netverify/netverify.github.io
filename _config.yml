@@ -178,7 +178,7 @@ authors:
       bio:           "Zachary Kincaid is an Associate Professor at Princeton University. His main research interests are in program analysis, logic, and programming languages. He has active research projects that aim to make program analysis compositional and robust."
 
     ennan:
-      name:          Ennan Li
+      name:          Ennan Zhai
       site:          https://ennanzhai.github.io/
       avatar:        /assets/images/ennan-zhai.jpg
       bio:           "Ennan Zhai is a Director of Network Research at Alibaba Cloud now. My research focuses on building high-performance and reliable networking systems, by utilizing techniques in areas including programming languages, verification, and programmable hardware."
