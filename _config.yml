@@ -159,6 +159,29 @@ authors:
       avatar:        /assets/images/anduo-wang.jpeg
       bio:           "Anduo Wang is an Associate Professor at Temple University, where she specializes in improving network state management using formal methods, databases, knowledge representation and reasoning, and logic programming. She received her Ph.D. from UPenn in 2013 and was a postdoctoral researcher at UIUC with Matthew Caesar and Brighten Godfrey before joining Temple University in 2016. Anduo has been the recipient of three NSF grants as a single-PI investigator, including the CRII in 2017, CNS core small in 2019, and CAREER in 2022. She has served in various networking venues, including as the General Chair for the ACM SOSR conference in 2020 and as a member of the ACM SIGCOMM Executive Committee as the SIGCOMM Information Services Director from 2017 to 2021."
 
+    yifei:
+      name:          Yifei Yuan
+      site:          https://www.linkedin.com/in/yifei-yuan-87bb2116/
+      avatar:        /assets/images/yifei-yuan.jpg
+      bio:           "Yifei Yuan is a researcher Alibaba Cloud."
+
+    xieyang:
+      name:          Xieyang Xu
+      site:          https://xieyangxu.github.io/
+      avatar:        /assets/images/xieyang-xu.jpg
+      bio:           "Xieyang Xu is a Research Scientist at Meta. His research interest lies in computer networks and systems."
+
+    zak:
+      name:          Zachary Kincaid
+      site:          https://www.cs.princeton.edu/~zkincaid/
+      avatar:        /assets/images/zak.jpg
+      bio:           "Zachary Kincaid is an Associate Professor at Princeton University. His main research interests are in program analysis, logic, and programming languages. He has active research projects that aim to make program analysis compositional and robust."
+
+    ennan:
+      name:          Ennan Li
+      site:          https://ennanzhai.github.io/
+      avatar:        /assets/images/ennan-zhai.jpg
+      bio:           "Ennan Zhai is a Director of Network Research at Alibaba Cloud now. My research focuses on building high-performance and reliable networking systems, by utilizing techniques in areas including programming languages, verification, and programmable hardware."
 
 # Defaults
 defaults:
