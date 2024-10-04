@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Network change verification (even for networks without specifications)"
-authors: [xieyang, yifei, zak, arvind, ratul, david, ennan]
+authors: [zak, arvind, ratul, david, xieyang, yifei, ennan]
 categories: [relational verification]
 image: assets/images/relational-verification-full-net.png
 tags: []
